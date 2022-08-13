@@ -67,17 +67,16 @@
     justify-content: flex-end;
     align-items: center;
     gap: 3rem;
+    position: relative;
 }
 
 .h__ul{
     display: flex;
-    gap: 2rem;
- /** transform-origin: top;
- /** transition: transform 250ms ease-in-out; */
+    gap: 2vw;
 }
 
 .h__ul a{
-    font-size: clamp(.9rem, 2vw, 1.2rem);
+    font-size: clamp(.9rem, 1.3vw, 1.2rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-two);
     color: var(--clr-one);
@@ -94,25 +93,15 @@
 }
 
 .nav-toogle-label{
-    width: 45px;
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
     cursor: pointer;
-    display: none;
 }
 
 .nav-toggle-span,
 .nav-toggle-span::before,
 .nav-toggle-span::after{
-    width: 20px;
+    width: 22px;
     height: 2px;
     border-radius: 2px;
-    display: block;
     background: var(--backg-four);
     position: relative;
     display: none;
@@ -153,11 +142,13 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    position: relative;
+    z-index: 1;
 }
 
 .h__title{
     width: min(17ch, 100%);
-    font-size: clamp(2.6rem, 4.8vw, 5.8rem);
+    font-size: clamp(2.2rem, 4.8vw, 5.8rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-one);
     color: var(--clr-one);
@@ -183,7 +174,7 @@
 }
 
 .h__input{
-    height: 55px;
+    height: 4vw;
     font-size: clamp(.9rem, 2vw, 1.2rem);
     border-radius: 8px;
     outline: none;
@@ -192,16 +183,17 @@
 }
 
 .h__input::placeholder{
-    font-size: clamp(.9rem, 2vw, 1.2rem);
+    font-size: clamp(.9rem, 1.5vw, 1.2rem);
     padding-left: 1rem;
 }
 
 .h__btn__txt{
-    font-size: clamp(.9rem, 2vw, 1.2rem);
+    width: 10vw;
+    height: 4vw;
+    font-size: clamp(.9rem, 1vw, 1.2rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-btn);
     border-radius: 5px;
-    padding: 1em 2em;
     background: var(--backg-two);
     color: var(--clr-two);
     cursor: pointer;
@@ -211,14 +203,15 @@
 /** MAIN 1º CONTAINER */
 .card--container{
     max-width: 1920px;
-    margin: 0 auto 8vw;
-    background: var(--backg-three);
+    margin: 0 auto 8rem;
+    background: var(--backg-one);
 }
 
 /** MAIN 1º BOX */
 .card--box--txt{
     width: 100%;
     margin: 0 auto 5rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,7 +228,7 @@
 
 .card__box__body{
     width: min(70ch, 100%);
-    font-size: clamp(.75rem, 2vw, 1.5rem);
+    font-size: clamp(.75rem, 1.5vw, 1.5rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-five);
     color: var(--clr-one);
@@ -251,7 +244,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    row-gap: 3rem;
+    column-gap: 1vw;
+    row-gap: 5rem;
 }
 
 .card--box{
@@ -262,7 +256,7 @@
 }
 
 .card__title{
-    font-size: clamp(1.5rem, 2vw, 1.5rem);
+    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-one);
     color: var(--clr-one);
@@ -271,7 +265,7 @@
 
 .card__body{
     width: min(80%, 100%);
-    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    font-size: clamp(1.125rem, 1.5vw, 1.5rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-five);
     color: var(--clr-one);
@@ -320,15 +314,16 @@
 /** MAIN 2º CONTAINER */
 .plans--container{
     max-width: 1920px;
-    margin: 0 auto 7vw;
-    padding: 3vw 0;
+    margin: 0 auto 7rem;
+    padding: 5rem 0;
     background: var(--backg-two);
 }
 
 /** MAIN 2º C. 1º BOX */
 .plans--txt{
     width: 100%;
-    margin: 0 auto 4vw;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,7 +331,7 @@
 }
 
 .plans__title{
-    font-size: clamp(2.25rem, 3.7vw, 5rem);
+    font-size: clamp(2rem, 3.7vw, 5rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-one);
     color: var(--clr-two);
@@ -344,7 +339,7 @@
 }
 
 .plans__sub{
-    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    font-size: clamp(0.9rem, 1.2vw, 1.5rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-five);
     color: var(--clr-two);
@@ -358,12 +353,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 3vw;
 }
 
 .plans__body{
     width: 20ch;
-    font-size: clamp(1.125rem, 2vw, 1.2rem);
+    font-size: clamp(1.125rem, 1.2vw, 1.2rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-one);
     color: var(--clr-two);
@@ -381,7 +376,7 @@
 /** MAIN 3º CONTAINER */
 .management--container{
     max-width: 1920px;
-    margin: 0 auto 8vw;
+    margin: 0 auto 8rem;
     background: var(--backg-one);
 }
 
@@ -393,7 +388,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-columns: 100%;
     align-items: center;
-    row-gap: 8vw;
+    row-gap: 8rem;
 }
 
 .manag__img:first-of-type{
@@ -409,7 +404,8 @@
     display: none;
 }
 
-.management--txt{
+.management--top,
+.management--bottom{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -426,7 +422,7 @@
 
 .management__body{
     width: 90%;
-    font-size: clamp(.9rem, 2vw, 1.5rem);
+    font-size: clamp(.9rem, 1.5vw, 1.5rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-five);
     margin-bottom: 5vw;
@@ -449,14 +445,15 @@
 /** MAIN 4º CONTAINER */
 .company--container{
     max-width: 1920px;
-    margin: 0 auto 5vw;
+    margin: 0 auto 5rem;
+    padding-top: 3rem;
     background: var(--backg-three);
 }
 
 /** MAIN 4º C. 1º BOX */
 .company--txt{
     width: 100%;
-    margin: 0 auto 3vw;
+    margin: 0 auto 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -464,14 +461,14 @@
 }
 
 .company__title{
-    font-size: clamp(2.25rem, 3.7vw, 5rem);
+    font-size: clamp(2.25rem, 3.5vw, 5rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-one);
     color: var(--clr-one);
 }
 
 .company__sub{
-    font-size: clamp(0.8rem, 2vw, 1.7rem);
+    font-size: clamp(0.8rem, 1.9vw, 1.7rem);
     font-family: var(--ff-one);
     font-weight: var(--weight-four);
     color: var(--clr-one);
@@ -500,7 +497,7 @@
 /** MAIN 5º CONTAINER */
 .contact--container{
     max-width: 1920px;
-    margin: 0 auto 6vw;
+    margin: 4rem auto 5rem;
     background: var(--backg-one);
     display: flex;
     flex-direction: column;
@@ -508,6 +505,8 @@
 }
 
 .contact--wrapper{
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 
@@ -557,35 +556,36 @@
 .f--container{
     max-width: 1920px;
     margin: 0 auto;
-    padding: 4vw 0 3vw;
+    padding: 4rem 0 3rem;
     background: var(--backg-two);
 }
 
 /** FOOTER 1º BOX */
 .f--info{
     width: 85%;
-    margin: 0 auto 4vw;
-    padding-right: 12vw;
+    margin: 0 auto 4rem;
+    padding-right: 5vw;
     display: flex;
     justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .f__nav__title{
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 1.7vw, 1.5rem);
     font-family: var(--ff-two);
     font-weight: var(--weight-two);
-    margin-bottom: 2vw;
+    margin-bottom: 1.5rem;
     color: var(--clr-two);
 }
 
 .f--ul{
     display: flex;
     flex-direction: column;
-    gap: 2vw;
+    gap: 1.5rem;
 }
 
 .f--ul a{
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
     font-family: var(--ff-two);
     font-weight: var(--weight-five);
     color: var(--clr-four);
@@ -598,10 +598,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .f__copyright{
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
     font-family: var(--ff-two);
     font-weight: var(--weight-five);
     color: var(--clr-four);
@@ -609,9 +610,302 @@
 
 .fig__social{
     display: flex;
-    gap: 1.5vw;
+    gap: .5rem;
 }
 
 .social__img{
     width: 100%;
+}
+
+@media (max-width:1024px){
+    .card--wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card__img{
+        width: 10vw;
+    }
+
+    .ellipse__pink,
+    .ellipse__lightblue,
+    .ellipse__red,
+    .ellipse__yellow,
+    .ellipse__purple,
+    .ellipse__blue{
+        width: 5vw;
+    }
+
+    .management--wrapper{
+        width: 95%;
+        row-gap: 2rem;
+    }
+
+    .manag__img:first-of-type{
+        margin-left: 0;
+    }
+
+    .m__img__mobile,
+    .mobile__management{
+        display: none;
+    }
+
+    .management__title{
+        margin-bottom: 1rem;
+    }
+    
+    .management__body{
+        margin-bottom: 3rem;
+    }
+
+    .manag__img__m,
+    .management__mobile{
+        display: initial;
+    }
+
+    .manag__img{
+        width: 100%;
+    }
+}
+
+@media (max-width:900px){
+    /** HEADER RESPONSIVE */
+    .h--container{
+        margin-bottom: 5rem;
+    }
+
+    .h--container::before{
+        display: initial;
+    }
+
+    .h--top{
+        width: 70%;
+        margin: 0 auto 3rem;
+    }
+
+    .h__nav{
+        justify-content: space-between;
+    }
+
+    .h__ul{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background: var(--backg-one);
+        border-radius: 0 0 5px 5px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 9999;
+        transform: scale(1,0);
+        transform-origin: top;
+        transition: transform 250ms ease-in-out;
+    }
+
+    .nav-toggle-span,
+    .nav-toggle-span::before,
+    .nav-toggle-span::after{
+        display: block;
+    }
+
+    .h--txt{
+        width: 90%;
+        align-items: center;
+    }
+
+    .h__title{
+        text-align: center;
+    }
+
+    .h__body{
+        text-align: center;
+        line-height: 23px;
+    }
+    
+    .h--btn--wrapper{
+        width: 100%;
+    }
+
+    .h__input{
+        height: 50px;
+    }
+        
+    .h__btn__txt{
+        width: 25%;
+        height: 50px;
+    }
+
+    /** MAIN 2º CONTAINER RESPONSIVE */
+    .plans--info{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .arrow__img{
+        width: 10%;
+    }
+
+    .plans__body:first-child,
+    .plans__body{
+        width: 80%;
+        text-align: center;
+    }
+
+    /** MAIN 3º CONTAINER RESPONSIVE */
+    .management--wrapper{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .manag__img{
+        order: 1;
+    }
+
+    .manag__img__m{
+        order: 3;
+    }
+
+    .management--top{
+        width: 100%;
+        align-items: center;
+        order: 2;
+    }
+
+    .management--bottom{
+        width: 100%;
+        align-items: center;
+        order: 4;
+    }
+
+    .management__title{
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .management__body{
+        width: 100%;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .management__btn{
+        width: 100%;
+    }
+
+    /** FOOTER RESPONSIVE */
+    .f--container{
+        width: 100%;
+    }
+
+    .f--info{
+        width: 90%;
+        margin: 0 auto 2rem;
+        flex-direction: column;
+    }
+
+    .f--social{
+        width: 90%;
+        flex-flow: column-reverse;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width:650px){
+    /** MAIN CARD CONTAINER */
+    .card__box__body{
+        line-height: 22px;
+    }
+
+    .card--wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .card__img{
+        width: 100%;
+    }
+
+    .ellipse__pink,
+    .ellipse__lightblue,
+    .ellipse__red,
+    .ellipse__yellow,
+    .ellipse__purple,
+    .ellipse__blue{
+        width: 50%;
+    }
+
+    .card__body{
+        width: 100%;
+    }
+
+    .card--pink{
+        order: 1;
+    }
+
+    .card--purple{
+        order: 2;
+    }
+
+    .card--red{
+        order: 3;
+    }
+
+    .card--blue{
+        order: 4;
+    }
+
+    .card--yellow{
+        order: 5;
+    }
+
+    .card--lightblue{
+        order: 6;
+    }
+
+    /** MAIN 4º CONTAINER RESPONSIVE */
+    .company--img--wrapper{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .img__mobile{
+        display: none;
+    }
+
+    /** MAIN 5º CONTAINER RESPONSIVE */
+    .contact--container{
+        padding: 0 1rem;
+    }
+
+    .contact__img{
+        width: 70%;
+    }
+    
+    .contact__ellipse{
+        width: 35%;
+        right: 1.4rem;
+    }
+
+    .contact__title{
+        margin-bottom: 1rem;
+    }
+    
+    .contact__body{
+        margin-bottom: 2rem;
+    }
+
+    .contact__btn{
+        padding: 1em 1.5em;
+    }
+}
+
+@media (max-width:450px){
+    .h--container{
+        background-size: 200% 100%;
+        background-position-x: 55%;
+    }
+
+    .h--top{
+        width: 90%;
+    }
 }
