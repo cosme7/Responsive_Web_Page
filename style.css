@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0;
@@ -10,6 +11,7 @@
 
 :root{
     --ff-one: 'Manrope', sans-serif;
+    --ff-two: 'Inter', sans-serif;
     /*  */
     --weight-one: 800;
     --weight-two: 700;
@@ -25,6 +27,7 @@
     --clr-one: black;
     --clr-two: white;
     --clr-three:#808080;
+    --clr-four: #E6E6E6;
 }
 
 /** HEADER */
@@ -33,7 +36,7 @@
     background-position: no-repeat;
     background-size: 100% 100%;
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 0 auto 4vw;
     padding-top: 2rem;
     position: relative;
 }
@@ -208,8 +211,7 @@
 /** MAIN 1º CONTAINER */
 .card--container{
     max-width: 1920px;
-    margin: 0 auto;
-    padding: 5vw 0 6vw;
+    margin: 0 auto 8vw;
     background: var(--backg-three);
 }
 
@@ -551,4 +553,65 @@
     border: none;
 }
 
-/** FOOTER  */
+/** FOOTER */
+.f--container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 4vw 0 3vw;
+    background: var(--backg-two);
+}
+
+/** FOOTER 1º BOX */
+.f--info{
+    width: 85%;
+    margin: 0 auto 4vw;
+    padding-right: 12vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f__nav__title{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-family: var(--ff-two);
+    font-weight: var(--weight-two);
+    margin-bottom: 2vw;
+    color: var(--clr-two);
+}
+
+.f--ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.f--ul a{
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-family: var(--ff-two);
+    font-weight: var(--weight-five);
+    color: var(--clr-four);
+}
+
+/** FOOTER 2º BOX */
+.f--social{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f__copyright{
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-family: var(--ff-two);
+    font-weight: var(--weight-five);
+    color: var(--clr-four);
+}
+
+.fig__social{
+    display: flex;
+    gap: 1.5vw;
+}
+
+.social__img{
+    width: 100%;
+}
