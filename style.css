@@ -638,6 +638,7 @@
 
     .management--wrapper{
         width: 95%;
+        column-gap: 2rem;
         row-gap: 2rem;
     }
 
