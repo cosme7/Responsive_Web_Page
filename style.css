@@ -454,7 +454,7 @@
 /** MAIN 4º C. 1º BOX */
 .company--txt{
     width: 100%;
-    margin: 0 auto 4vw;
+    margin: 0 auto 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -476,9 +476,79 @@
 }
 
 /** MAIN 4º IMG BOX */
-.company--img--wraper{
+.company--img--wrapper{
     width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
+
+.img__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company__img{
+    width: 100%;
+}
+
+/** MAIN 5º CONTAINER */
+.contact--container{
+    max-width: 1920px;
+    margin: 0 auto 6vw;
+    background: var(--backg-one);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact--wrapper{
+    position: relative;
+}
+
+.contact__img{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.contact__ellipse{
+    width: 50%;
+    position: absolute;
+    top: .5rem;
+    right: .4rem;
+}
+
+.contact__title{
+    font-size: clamp(2rem, 3vw, 4rem);
+    font-family: var(--ff-one);
+    font-weight: var(--weight-one);
+    margin-bottom: .5vw;
+    color: var(--clr-one);
+}
+
+.contact__body{
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    font-family: var(--ff-one);
+    font-weight: var(--weight-four);
+    margin-bottom: 2vw;
+    color: var(--clr-one);
+    text-align: center;
+}
+
+.contact__btn{
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-family: var(--ff-one);
+    font-weight: var(--weight-btn);
+    border-radius: 8px;
+    padding: 1em 2em;
+    background-color: var(--backg-two);
+    color: var(--clr-two);
+    cursor: pointer;
+    border: none;
+}
+
+/** FOOTER  */
